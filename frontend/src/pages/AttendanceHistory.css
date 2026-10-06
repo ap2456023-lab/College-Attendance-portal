@@ -1,0 +1,104 @@
+.ah-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 60px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.ah-back-btn {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  background: #b9bbcecc;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.ah-home-btn:hover {
+  transform: translateX(-4px);
+  background: white;
+}
+
+.ah-title {
+  font-size: 35px;
+  font-weight: 800;
+  text-shadow: 0px 2px 10px #ffffffaa;
+  color: #1a1a1a;
+}
+
+.ah-info {
+  background: #ffffffaa;
+  backdrop-filter: blur(10px);
+  width: 450px;
+  margin: 20px auto;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 17px;
+  box-shadow: 0px 8px 18px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+.ah-month-box {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.ah-month-box select {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.ah-table {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th, td {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ddd;
+  font-weight: 700;
+}
+
+th {
+  background: #0033aa;
+  color: white;
+}
+
+.present {
+  background: #b6ffd0;
+  color: #008d2b;
+}
+
+.absent {
+  background: #ffb6b6;
+  color: #d10000;
+}
+
+.holiday {
+  background: #fff3b0;
+  color: #a88300;
+}
+
+.empty {
+  background: #f0f0f0;
+  color: #888;
+}

@@ -1,0 +1,70 @@
+.course-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/Data3.jpg") no-repeat center center/cover;;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #e9eef8;
+}
+
+.course-box {
+  width: 350px;
+  background: white;
+  border: 2px solid #a2b4d6;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.course-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  background: #dbe8ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.course-btn:hover {
+  background: #c4daff;
+}
+
+.year-box {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 0;
+}
+
+.year-box.open {
+  max-height: 500px;
+  margin-top: 15px;
+}
+
+.year-btn {
+  padding: 12px;
+  font-size: 17px;
+  background: #eef4ff;
+  border: 1px solid #b6c8ea;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.year-btn:hover {
+  background: #d9e6ff;
+}

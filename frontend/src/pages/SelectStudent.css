@@ -1,0 +1,86 @@
+.ss-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(145deg, #b0e3ff, #eac6ff);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.ss-back-btn {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #ffffffdd;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  color: #1a1a1a;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  backdrop-filter: blur(8px);
+  transition: 0.25s ease;
+}
+
+.ss-back-btn:hover {
+  transform: translateX(-4px);
+  background: #fff;
+}
+
+.ss-title {
+  font-size: 38px;
+  font-weight: 800;
+  margin-top: 20px;
+  color: #222;
+  text-shadow: 0 3px 10px #ffffff55;
+}
+
+.ss-subtitle {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.ss-list {
+  width: 450px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ss-card {
+  background: #ffffffdd;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  transition: 0.25s ease-in-out;
+}
+
+.ss-card:hover {
+  transform: scale(1.04);
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.roll-no {
+  margin-left: 4px;
+  opacity: 0.6;
+}
+
+.ss-no-data {
+  margin-top: 30px;
+  font-size: 18px;
+  opacity: 0.7;
+}
