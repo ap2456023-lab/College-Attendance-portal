@@ -1,11 +1,9 @@
 
-/* ===== Global box sizing ===== */
 .att-container,
 .att-container * {
   box-sizing: border-box;
 }
 
-/* ===== Page ===== */
 .att-container {
   width: 100%;
   min-height: 100vh;
@@ -18,7 +16,6 @@
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* ===== Back Button: always in normal flow ===== */
 .vs-back-btn {
   position: static;
   align-self: flex-start;
@@ -45,7 +42,6 @@
   transform: translateX(-2px);
 }
 
-/* ===== Main Form Card ===== */
 .att-box {
   width: 100%;
   max-width: 1000px;
@@ -59,7 +55,6 @@
   text-align: center;
 }
 
-/* ===== Heading ===== */
 .att-title {
   position: static;
   margin: 0 0 24px;
@@ -71,7 +66,6 @@
   overflow-wrap: anywhere;
 }
 
-/* ===== Date Picker ===== */
 .date-box {
   display: flex;
   align-items: center;
@@ -103,7 +97,6 @@
   box-shadow: 0 0 0 3px rgba(49, 94, 251, 0.12);
 }
 
-/* ===== Responsive Table Wrapper ===== */
 .att-table-scroll {
   width: 100%;
   max-width: 100%;
@@ -149,7 +142,6 @@
   background: #f8faff;
 }
 
-/* ===== Attendance Options ===== */
 .radio-group {
   display: flex;
   justify-content: center;
@@ -189,7 +181,6 @@
   cursor: pointer;
 }
 
-/* ===== Submit Button ===== */
 .submit-btn {
   display: block;
   width: 100%;
@@ -218,7 +209,6 @@
   outline-offset: 3px;
 }
 
-/* ===== Tablet ===== */
 @media screen and (max-width: 768px) {
   .att-container {
     padding: 18px;
@@ -325,7 +315,6 @@
   }
 }
 
-/* ===== Narrow phones ===== */
 @media screen and (max-width: 360px) {
   .att-container {
     padding: 10px;
@@ -348,7 +337,6 @@
   }
 }
 
-/* ===== Accessibility ===== */
 @media (prefers-reduced-motion: reduce) {
   .vs-back-btn,
   .radio-group label,
@@ -357,7 +345,6 @@
   }
 }
 
-/* Professional Attendance Form */
 
 .att-container {
   background: #f1f5fb;
@@ -483,12 +470,10 @@
   transition: background 0.2s, border-color 0.2s;
 }
 
-/* Present = Green */
 .radio-group label:has(input[value="Present"]) {
   color: #15803d;
 }
 
-/* Color selected options */
 .radio-group label:has(input:checked) {
   border-color: #818cf8;
   background: #eef2ff;

@@ -15,7 +15,6 @@
     #f5f7fc;
 }
 
-/* Page heading */
 .title {
   font-size: clamp(28px, 4vw, 38px);
   font-weight: 800;
@@ -26,7 +25,6 @@
   line-height: 1.3;
 }
 
-/* Subtitle — optional */
 .course-wrapper::before {
   content: "Choose a department and academic year";
   order: 1;
@@ -36,12 +34,10 @@
   margin-bottom: 30px;
 }
 
-/* Keep heading above subtitle */
 .course-wrapper > .title {
   order: 0;
 }
 
-/* Course card */
 .course-box {
   position: relative;
   width: 100%;
@@ -71,7 +67,6 @@
   box-shadow: 0 14px 30px rgba(30, 64, 175, 0.11);
 }
 
-/* Course button */
 .course-btn {
   position: relative;
   width: 100%;
@@ -132,7 +127,6 @@
   outline-offset: 3px;
 }
 
-/* Year options — closed */
 .year-box {
   max-height: 0;
   overflow: hidden;
@@ -150,7 +144,6 @@
     visibility 0.25s ease;
 }
 
-/* Year options — open */
 .year-box.open {
   max-height: 400px;
   margin-top: 15px;
@@ -158,7 +151,6 @@
   visibility: visible;
 }
 
-/* Individual year button */
 .year-btn {
   width: 100%;
   box-sizing: border-box;
@@ -203,7 +195,6 @@
   transform: translateX(3px);
 }
 
-/* Tablet */
 @media screen and (max-width: 768px) {
   .course-wrapper {
     padding: 35px 18px;
@@ -214,7 +205,6 @@
   }
 }
 
-/* Mobile */
 @media screen and (max-width: 600px) {
   .course-wrapper {
     position: relative;
@@ -250,7 +240,6 @@
   }
 }
 
-/* Small phones */
 @media screen and (max-width: 360px) {
   .course-wrapper {
     padding: 40px 12px 24px;
@@ -286,7 +275,6 @@
   }
 }
 
-/* Reduced motion accessibility */
 @media (prefers-reduced-motion: reduce) {
   .course-box,
   .course-btn,
@@ -339,7 +327,6 @@
   }
 }
 
-/* Extra-small phones */
 @media screen and (max-width: 360px) {
   .course-wrapper {
     padding: 60px 12px 24px;

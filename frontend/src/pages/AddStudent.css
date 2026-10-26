@@ -45,7 +45,6 @@
   animation: fadeIn 0.4s ease-in-out;
 }
 
-/* Heading */
 .add-student-title {
   font-size: 32px;
   font-weight: 800;
@@ -54,7 +53,6 @@
   margin-bottom: 25px;
 }
 
-/* Form Labels */
 .add-student-label {
   display: block;
   font-size: 15px;
@@ -63,7 +61,6 @@
   color: #1f2937;
 }
 
-/* Inputs */
 .add-student-input {
   width: 100%;
   padding: 12px;
@@ -79,7 +76,6 @@
   box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
 }
 
-/* Add Button */
 .add-student-btn {
   width: 100%;
   padding: 14px;
@@ -125,20 +121,17 @@
 }
 
 
-/* Fade animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ANIMATED GRADIENT BACKGROUND */
 @keyframes gradientFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Floating light glow animation */
 @keyframes floatGlow {
   from { transform: translateY(0px) translateX(0px); }
   to { transform: translateY(30px) translateX(20px); }

@@ -10,17 +10,14 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Home
 app.get('/', (req, res) => {
   res.send('Attendance Backend Running ✔️');
 });
 
-// Health check
 app.get('/api/health', (req, res) => {
   res.json({ ok: true });
 });
 
-// Add student
 app.post('/api/students', async (req, res) => {
   const { student_name, course, roll_no, year } = req.body;
 
@@ -43,7 +40,6 @@ app.post('/api/students', async (req, res) => {
 }
 });
 
-// Fetch students by course and year
 app.get('/api/students/filter', async (req, res) => {
   const { course, year } = req.query;
 
@@ -132,7 +128,7 @@ app.get('/api/attendance/monthly-report', async (req, res) => {
   }
 });
 
-// Individual student attendance history
+// student attendance history
 app.get('/api/attendance/history', async (req, res) => {
   try {
     const { student_id, month, year } = req.query;
@@ -176,7 +172,6 @@ app.get("/api/dashboard", async (req, res) => {
       "SELECT COUNT(*) AS total FROM student_data"
     );
 
-    // Attendance summary for the selected date
     const [summaryRows] = await db.query(
       `SELECT
          COALESCE(SUM(status = 'Present'), 0) AS present,
@@ -186,7 +181,7 @@ app.get("/api/dashboard", async (req, res) => {
       [selectedDate]
     );
 
-    // Branch-wise attendance for the selected date
+// Branch-wise attendance for the selected date
     const [branchRows] = await db.query(
       `SELECT
         s.course AS branch,
@@ -206,7 +201,7 @@ app.get("/api/dashboard", async (req, res) => {
       [selectedDate]
     );
 
-    // Attendance records for the last seven days
+ // Attendance records for the last seven days
     const endDate = new Date(`${selectedDate}T12:00:00`);
     const startDate = new Date(endDate);
     startDate.setDate(startDate.getDate() - 6);
@@ -257,14 +252,13 @@ app.get("/api/dashboard", async (req, res) => {
 });
 
 
-// Start server
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
 
-// Fetch all students from MySQL
+// Fetch students from MySQL
 app.get("/api/students", async (req, res) => {
   try {
     const [rows] = await db.query(

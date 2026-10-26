@@ -14,7 +14,6 @@
   background: #f4f5f0;
 }
 
-/* Decorative top background */
 .sd-wrapper::before {
   content: "";
   position: absolute;
@@ -27,7 +26,6 @@
   z-index: 0;
 }
 
-/* Home button */
 .sd-home-btn {
   position: absolute;
   top: 22px;
@@ -54,7 +52,6 @@
   transform: translateY(-2px);
 }
 
-/* Heading */
 .sd-title {
   position: relative;
   z-index: 1;
@@ -71,7 +68,6 @@
   line-height: 1.25;
 }
 
-/* Subtitle */
 .sd-title::after {
   content: "STUDENT RECORDS  /  DEPARTMENT DIRECTORY";
   display: block;
@@ -84,7 +80,6 @@
   line-height: 1.8;
 }
 
-/* Branch list */
 .sd-branch-container {
   position: relative;
   z-index: 1;
@@ -98,7 +93,6 @@
   gap: 15px;
 }
 
-/* Branch card */
 .sd-branch-card {
   width: 100%;
   min-width: 0;
@@ -123,7 +117,6 @@
   transform: translateY(-2px);
 }
 
-/* Branch button */
 .sd-branch-btn {
   width: 100%;
   min-width: 0;
@@ -152,7 +145,6 @@
   transition: background 0.25s ease;
 }
 
-/* Plus indicator */
 .sd-branch-btn::after {
   content: "+";
   flex-shrink: 0;
@@ -175,7 +167,6 @@
   background: #5da9ba;
 }
 
-/* Year dropdown */
 .sd-year-dropdown {
   display: flex;
   flex-direction: column;
@@ -187,7 +178,6 @@
   animation: sdReveal 0.3s ease both;
 }
 
-/* Year button */
 .sd-year-btn {
   width: 100%;
   min-width: 0;
@@ -230,7 +220,6 @@
   transform: translateX(3px);
 }
 
-/* Keyboard accessibility */
 .sd-home-btn:focus-visible,
 .sd-branch-btn:focus-visible,
 .sd-year-btn:focus-visible {
@@ -238,7 +227,6 @@
   outline-offset: 3px;
 }
 
-/* Animation */
 @keyframes sdReveal {
   from {
     opacity: 0;
@@ -251,7 +239,6 @@
   }
 }
 
-/* ===== TABLET ===== */
 @media screen and (max-width: 768px) {
   .sd-wrapper {
     padding: 100px 20px 35px;
@@ -266,7 +253,6 @@
   }
 }
 
-/* ===== MOBILE ===== */
 @media screen and (max-width: 600px) {
   .sd-wrapper {
     padding: 88px 14px 28px;
@@ -328,7 +314,6 @@
   }
 }
 
-/* ===== SMALL PHONES ===== */
 @media screen and (max-width: 360px) {
   .sd-wrapper {
     padding: 80px 10px 22px;
@@ -365,7 +350,6 @@
   }
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .sd-home-btn,
   .sd-branch-card,
