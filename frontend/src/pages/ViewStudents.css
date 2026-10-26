@@ -1,99 +1,302 @@
+
 .vs-wrapper {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
-  padding: 50px 0;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background: linear-gradient(135deg, #9fd8ff, #c8b6ff, #fbc2eb);
-  background-size: 300% 300%;
-  animation: gradientMove 12s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% { background-position: left top; }
-  50% { background-position: right center; }
-  100% { background-position: left bottom; }
+  padding: 90px 24px 45px;
+  background: #d3d4d5;
+  position: relative;
 }
 
 .vs-back-btn {
-  position: fixed;
-  top: 20px;
-  left: 25px;
-  padding: 10px 20px;
-  background: #ffffffdd;
-  border: none;
+  position: absolute;
+  top: 22px;
+  left: 24px;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 17px;
+  border: 1px solid #dbe3ed;
   border-radius: 10px;
+  background: #ffffff;
+  color: #19324d;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 650;
   cursor: pointer;
-  font-weight: 700;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  transition: .2s;
-  z-index: 99;
+  box-shadow: none;
 }
 
 .vs-back-btn:hover {
-  transform: translateX(-4px);
-  background: white;
+  background: #eaf5f3;
+  color: #087f70;
 }
 
 .vs-card {
-  width: 600px;
-  padding: 35px;
-  margin-top: 20px;
-  background: #ffffffdd;
+  width: 100%;
+  max-width: 900px;
+  min-width: 0;
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 18px;
-  backdrop-filter: blur(15px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  animation: fadeIn 0.8s ease;
+  box-shadow: 0 8px 28px rgba(25, 50, 77, 0.06);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.vs-header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-bottom: 24px;
+  background: #f9fafc;
+  border: 1px solid #234965;
+  border-radius: 14px;
 }
 
 .vs-title {
-  font-size: 32px;
-  font-weight: 800;
-  margin-bottom: 10px;
-  color: #222;
-  text-shadow: 0 2px 8px #ffffff88;
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: clamp(25px, 3vw, 34px);
+  font-weight: 750;
+  line-height: 1.35;
+  letter-spacing: -0.5px;
+  overflow-wrap: anywhere;
 }
 
 .vs-subtitle {
-  font-size: 20px;
-  margin-bottom: 25px;
-  font-weight: 600;
-  color: #333;
+  margin: 0;
+  color: #595a5b;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .vs-student-box {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #dce5ee;
+  border-radius: 12px;
 }
 
 .vs-student-card {
-  padding: 16px 20px;
-  background: white;
-  border-radius: 14px;
-  text-align: center;
-  font-size: 17px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 19px 22px;
+  background: #fffefe;
+  color: #243b53;
+  border: none;
+  border-bottom: 1px solid #36393c;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: 15px;
   font-weight: 600;
+  text-align: left;
   cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.25s ease;
+  box-shadow: none;
+}
+
+.vs-student-card:last-child {
+  border-bottom: none;
+}
+
+.vs-student-card:nth-child(even) {
+  background: #2d2e30;
 }
 
 .vs-student-card:hover {
-  transform: scale(1.04);
-  background: #eef5ff;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background: #edf7f5;
+}
+
+.vs-name {
+  min-width: 0;
+  color: #19324d;
+  font-size: 15px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 .vs-roll {
   display: block;
-  margin-top: 4px;
-  opacity: 0.6;
+  flex-shrink: 0;
+  margin: 0 auto 0 20px;
+  color: #212224;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.vs-student-card::after {
+  content: "→";
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #e5f4f0;
+  color: #087f70;
+  font-size: 20px;
+}
+
+.vs-card > p {
+  margin: 20px 0 0;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.vs-no-data {
+  margin: 0;
+  padding: 22px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.vs-student-card:focus-visible,
+.vs-back-btn:focus-visible {
+  outline: 3px solid #5bb9a8;
+  outline-offset: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .vs-wrapper {
+    padding: 80px 18px 32px;
+  }
+
+  .vs-card {
+    max-width: 680px;
+    padding: 20px;
+  }
+
+  .vs-header {
+    padding: 25px;
+    margin-bottom: 20px;
+  }
+
+  .vs-student-card {
+    padding: 17px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vs-wrapper {
+    padding: 76px 13px 24px;
+  }
+
+  .vs-back-btn {
+    top: 14px;
+    left: 13px;
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+
+  .vs-card {
+    padding: 13px;
+    border-radius: 14px;
+  }
+
+  .vs-header {
+    padding: 22px 17px;
+    margin-bottom: 17px;
+    border-radius: 11px;
+  }
+
+  .vs-title {
+    font-size: 25px;
+    line-height: 1.35;
+  }
+
+  .vs-subtitle {
+    font-size: 13px;
+  }
+
+  .vs-student-box {
+    border-radius: 10px;
+  }
+
+  .vs-student-card {
+    gap: 10px;
+    padding: 15px 12px;
+  }
+
+  .vs-name {
+    font-size: 14px;
+  }
+
+  .vs-roll {
+    margin-left: auto;
+    font-size: 12px;
+    text-align: right;
+  }
+
+  .vs-student-card::after {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .vs-wrapper {
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+
+  .vs-card {
+    padding: 10px;
+  }
+
+  .vs-header {
+    padding: 19px 13px;
+  }
+
+  .vs-title {
+    font-size: 22px;
+  }
+
+  .vs-student-card {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 13px 10px;
+  }
+
+  .vs-name {
+    max-width: 100%;
+  }
+
+  .vs-roll {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .vs-student-card::after {
+    margin-left: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vs-wrapper *,
+  .vs-wrapper *::before,
+  .vs-wrapper *::after {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
 }

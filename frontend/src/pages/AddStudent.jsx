@@ -26,8 +26,14 @@ export default function AddStudent() {
       alert("Student Added Successfully!");
       navigate("/teacher-dashboard");
     } catch (error) {
-      console.error(error);
-      alert("Error adding student!");
+      console.error("Add Student Error:", error.response?.data || error.message);
+
+      alert(
+        error.response?.data?.details ||
+        error.response?.data?.error ||
+        error.message ||
+        "Error adding student!"
+      );
     }
   };
 

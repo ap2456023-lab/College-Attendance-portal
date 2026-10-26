@@ -6,7 +6,6 @@ export default function SelectCourse() {
   const [openCourse, setOpenCourse] = useState(null);
   const navigate = useNavigate();
 
-  // 🔥 Full Course Mapping (Short → Full ENUM value)
   const courseMap = {
     AIML: "Computer Science Engineering (AIML)",
     CSECore: "Computer Science Engineering (Core)",

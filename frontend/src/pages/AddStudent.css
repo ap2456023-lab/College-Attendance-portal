@@ -7,9 +7,7 @@
   position: relative;
   overflow: hidden;
 
-  background: linear-gradient(135deg, #dbeafe, #eff6ff);
-  background-size: 300% 300%;
-  animation: gradientFlow 12s ease-in-out infinite;
+ 
 }
 
 .add-student-wrapper::before,
