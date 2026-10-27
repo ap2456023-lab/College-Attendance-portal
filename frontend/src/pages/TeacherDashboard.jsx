@@ -399,7 +399,7 @@ const attendancePercentage =
             </div>
 
             <label className="date-picker-label">
-              <span>View date</span>
+              <span style={{color:"black", fontSize:"1.02rem"}}>View date</span>
               <input
                 type="date"
                 value={selectedDate}

@@ -21,9 +21,9 @@ const LoginPage = () => {
     <div className="page-container">
       <div className="login-box">
         <h1 className="title">
-          <span className="blue">DIGITAL</span>{" "}
+          <span className="blue">COLLEGE</span>{" "}
           <span className="orange">ATTENDANCE</span>{" "}
-          <span className="blue">SYSTEM</span>
+          <span className="blue">PORTAL</span>
         </h1>
 
         <div className="form-group">

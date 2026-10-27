@@ -17,8 +17,8 @@
 }
 
 .title {
-  font-family: 'Times New Roman';
-  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 38px;
   margin-bottom: 25px;
   font-weight: 700;
   line-height: 30px;
@@ -26,6 +26,7 @@
 
 .blue {
   color: #1b4deb;
+  font-size: 39px;
 }
 
 .orange {
